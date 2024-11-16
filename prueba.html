@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos de Pacientes Tratados</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    h2 { text-align: center; color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 12px; text-align: left; }
+    th { background-color: #007bff; color: #fff; }
+    .actions { text-align: center; }
+    button { padding: 8px 12px; font-size: 14px; margin-top: 10px; background-color: #28a745; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #218838; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registro de Pacientes Tratados</h2>
+
+    <!-- Tabla de Datos de Pacientes -->
+    <table>
+      <thead>
+        <tr>
+          <th>ID del Paciente</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Diagnóstico</th>
+          <th>Tratamiento</th>
+          <th>Fecha de Tratamiento</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ejemplo de datos de paciente almacenados -->
+        <tr>
+          <td>001</td>
+          <td>Juan Pérez</td>
+          <td>34</td>
+          <td>Dermatitis de contacto</td>
+          <td>Cremas tópicas y antihistamínicos orales</td>
+          <td>2024-11-13</td>
+          <td class="actions">
+            <button onclick="verDetalles('001')">Ver Detalles</button>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>María López</td>
+          <td>29</td>
+          <td>Psoriasis</td>
+          <td>Fototerapia y cremas corticosteroides</td>
+          <td>2024-11-10</td>
+          <td class="actions">
+            <button onclick="verDetalles('002')">Ver Detalles</button>
+          </td>
+        </tr>
+        <!-- Filas adicionales se agregarían aquí -->
+      </tbody>
+    </table>
+
+    <!-- Botón para agregar un nuevo paciente (simulación) -->
+    <div style="text-align: center; margin-top: 20px;">
+      <button onclick="agregarPaciente()">Agregar Nuevo Paciente</button>
+    </div>
+  </div>
+
+  <script>
+    function verDetalles(idPaciente) {
+      alert("Mostrando detalles para el paciente con ID: " + idPaciente);
+      // Aquí podrías enlazar a una página que muestre información detallada del paciente
+    }
+
+    function agregarPaciente() {
+      alert("Funcionalidad de agregar paciente (a implementar)");
+      // Aquí podrías enlazar a un formulario para ingresar un nuevo paciente
+    }
+  </script>
+</body>
+</html>
