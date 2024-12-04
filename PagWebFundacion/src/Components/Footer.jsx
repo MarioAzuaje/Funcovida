@@ -13,20 +13,29 @@ function Footer () {
                 <div>
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/concienciaporlavidavzla/">Instagram</a>
+                            <a href="https://www.instagram.com/concienciaporlavidavzla/">
+                                <img src="ig-logo.svg" alt="Instagram" className="socialMediaIcon" />
+                            </a>
                         </li>
                         <li>
-                            <a href="">X</a>
+                            <a href="#">
+                                <img src="x-logo.svg" alt="Instagram" className="socialMediaIcon" />
+                            </a>
                         </li>
                         <li>
-                            <a href="">WhatsApp</a>
+                            <a href="#">
+                                <img src="ws-logo.svg" alt="Instagram" className="socialMediaIcon" />
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div className="footerInfo">
                     <p>Contacto</p>
+                    <img src="llamada-logo.svg" alt="Telefono" />
                     <p>+58 000-0000</p>
+                    <img src="correo-logo.svg" alt="Correo Electronico" />
                     <p>correo@gmail.com</p>
+                    <img src="ubi-logo.svg" alt="Telefono" />
                     <p>Ubicacion</p>
                 </div>
             </div>

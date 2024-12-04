@@ -8,9 +8,18 @@ function Nav() {
             <div className="containerNav">
                 <Logo Widthx={"70px"} Heighty={"70px"}/>
                 <div>
-                    <NavLink to={""}>¿Quiénes somos?</NavLink>
-                    <NavLink to={""}>Farmacia</NavLink>
-                    <NavLink to={""}>Contáctanos</NavLink>
+                    <div className="Links">
+                        <NavLink to={"/Quienes-Somos"}>¿Quiénes somos?</NavLink>
+                        <div></div>
+                    </div>
+                    <div className="Links">
+                        <NavLink to={"/Farmacia"}>Farmacia</NavLink>
+                        <div></div>
+                    </div>
+                    <div className="Links">
+                        <NavLink to={"/Contactanos"}>Contáctanos</NavLink>
+                        <div></div>
+                    </div>
                 </div>
 
             </div>

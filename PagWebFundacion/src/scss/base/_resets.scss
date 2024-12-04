@@ -8,14 +8,6 @@ li {
     list-style: none;
 }
 
-h2 {
-    text-align: end;
-    font-family: var(--font-poppins);
-    font-size: 17px;
-    font-weight: 600;
-    color: var(--Aero);
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -26,7 +18,6 @@ button {
     outline: none;
     cursor: pointer;
     background: none;
-    font-family: var(--font-nunito);
 }
 
 ::-webkit-scrollbar {
@@ -38,5 +29,5 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #2C2C2C;
 }
