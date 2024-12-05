@@ -1,7 +1,12 @@
+import Nav from '../Components/Nav'
+import Footer from '../Components/Footer'
+import { Logo } from '../Components/Logo'
+import { imageSlider1 } from '../data/imageSlider'
+import Slider from '../Components/Slider'
+
 function Index() {
 
 return (
-
     <div className='containerIndex'>
         <Nav/>
         <section>
@@ -49,6 +54,7 @@ return (
                             return (
                             <>
                             <img key={index} src={image.url} alt={image.alt} />
+
                             </>
                         );
                         })}
