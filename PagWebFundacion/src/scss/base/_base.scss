@@ -110,17 +110,19 @@ span{
 }
 
 .logoBienvenida{
-    width: 75%;
-    min-width: 300px; //Definir limites de imagen (Pendiente!!)
-    max-width: 500px;
+    width: 90%;
+    min-width: 180px; //Definir limites de imagen (Pendiente!!)
+    max-width: 800px;
     height: auto;
-    padding-left: 25px;
+    margin: 8%;
+    cursor: auto;
 }
 
 .navbar{
     width: 100vw;
     height: 10vh;
     min-height: 70px;
+    max-height: 90px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -174,7 +176,7 @@ span{
 
 section{
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
     z-index: 0;
     display: flex;
     justify-content: center;
@@ -211,7 +213,6 @@ section{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                gap: 2rem;
     
                 .cir{
                     width: 1750px;
