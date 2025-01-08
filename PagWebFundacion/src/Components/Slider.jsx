@@ -94,7 +94,7 @@ function Slider({ children }) {
           slideNext();
         }}
       >
-        {">"}
+        {"> "}
       </button>
       <button
         className="slider__btn-prev"
@@ -103,7 +103,10 @@ function Slider({ children }) {
           slidePrev();
         }}
       >
-        {"<"}
+        {" <"}
+      </button>
+      <button className="slider__burbuja">
+        <img src="icons/burbuja.svg" alt="" />  
       </button>
     </div>
   );

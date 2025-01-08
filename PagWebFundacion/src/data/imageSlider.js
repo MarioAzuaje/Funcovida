@@ -7,7 +7,12 @@ export const imageSlider1 = [
     {
         url: 'imageSlider1/prueba2.jpg',
         description: "XD",
-        alt: "Imagen de Prueba"
+        alt: "Imagen de Prueba2"
+    },
+    {
+        url: 'imageSlider1/prueba3.jpg',
+        description: "XD",
+        alt: "Imagen de Prueba3"
     },
 ];
 

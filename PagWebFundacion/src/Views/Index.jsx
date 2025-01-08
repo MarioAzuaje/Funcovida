@@ -3,8 +3,10 @@ import Footer from '../Components/Footer'
 import { Logo } from '../Components/Logo'
 import { imageSlider1 } from '../data/imageSlider'
 import Slider from '../Components/Slider'
+import Tarjeta from '../Components/Tarjeta'
 
 function Index() {
+    const tarjetas = [1,2,3,4]
 
 return (
     <div className='containerIndex'>
@@ -53,8 +55,8 @@ return (
                         {imageSlider1.map((image, index) => {
                             return (
                             <>
-                            <img key={index} src={image.url} alt={image.alt}/>
-                            <p>{image.description}</p>
+                            <img key={index} src={image.url} alt={image.alt} />
+
                             </>
                         );
                         })}
@@ -63,14 +65,13 @@ return (
             </div>
         </section>
         <section>
-            <div className='containerS2'>
+        <div className='containerS2'>
                 <div className='lateralSlider'>
                     <Slider>
                         {imageSlider1.map((image, index) => {
                             return (
                             <>
                             <img key={index} src={image.url} alt={image.alt}/>
-                            <p>{image.description}</p>
                             </>
                         );
                         })}
@@ -88,7 +89,58 @@ return (
                     <li> Respetar sus derechos a través de una sensibilización a las personas, que resulte en el aumento del nivel de compromiso y conciencia sobre el valor de la no discriminación y respeto por la igualda de los seres humanos y los afectados de sida.</li>
                 </ol>
             </div>
+            <img src="Mancha_1_Section_3.png" alt="Mancha" className='mancha2'/>
             <img src="Mancha_2_Section_3.png" alt="Mancha" className='mancha2'/>
+        </section>
+        <section>
+            <img src="Mancha_1_Section_4.png" alt="Mancha" className='mancha4'/>
+            <img src="Mancha_2_Section_4.png" alt="Mancha" className='mancha4'/>
+            <div className='containerV'>
+                <h2>Ley que Protege a <br /> los Pacientes de <span> VIH</span></h2>
+                <p>
+                Tiene como visión convertirse en una Organización NO Gubernamental líder para la Defensa de los Derechos de las personas que padecen de VIH/SIDA y otras infecciones de transmisión sexual; a través de estrategias y herramientas necesarias para enfrentar las implicaciones del VIH/SIDA.
+                <br />
+                <br />
+                El mejoramiento de la calidad de vida a través de la educación, prevención, asistencia médica y atención psicológica, con la participación de los actores a todo nivel, organizaciones públicas o privadas, naturales o júridicas organizaciones no gubernamentales, asociaciones afines y comunitarias en general.
+                </p>
+            </div>
+
+            <div className='containerLeyes'>
+                <div className='Ley'>
+
+                </div>
+
+                <div className='container3Leyes'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+            <img src="Mancha_1_Section_6.png" alt="Mancha" className='mancha3'/>
+            <img src="Mancha_2_Section_6.png" alt="Mancha" className='mancha3'/>
+
+            <div className='containerS6'>
+                <div>
+                    <img src="persona.jpg" alt="" />
+
+                    <b>Persona 1</b>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod.</p>
+                </div>
+            </div>
+            <div className='container1S6'>
+                {tarjetas.slice(0,5).map((index) => {
+                    return (
+                        <Tarjeta key={index}/>
+                    )
+                })}
+
+            </div>
         </section>
         <Footer/>
     </div>
