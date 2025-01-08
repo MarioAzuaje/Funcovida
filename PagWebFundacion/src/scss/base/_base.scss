@@ -1,9 +1,18 @@
-html, body{
+html {
     font-family: var(--font-outfit);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
+<<<<<<< Updated upstream
+=======
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+>>>>>>> Stashed changes
 .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
     position: absolute;
     z-index: -1;
@@ -115,6 +124,7 @@ span{
 .navbar{
     width: 100vw;
     height: 10vh;
+    min-height: 70px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -181,6 +191,7 @@ section{
 
     p, ol{
         font-size: 1.4rem;
+        padding: 0 6vw 0 0;
     }
 }
 
@@ -331,7 +342,6 @@ section{
             justify-content: center;
             width: 50%;
             height: 100%;
-            padding: 0 6vw 0 0;
             gap: 4rem;
 
             li {
@@ -565,7 +575,7 @@ section{
 
         .slider__burbuja {
         position: absolute;
-        bottom: 12%;
+        bottom: 18%;
         left: 5%;
         transform: translateX(-50%);       
         z-index: 5;
