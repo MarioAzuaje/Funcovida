@@ -374,7 +374,7 @@ section{
             gap: 4rem;
 
             p{
-                height: 40%;
+                height: 35%;
             }
         }
 
@@ -394,13 +394,13 @@ section{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
 
                 img{
-                    display: flex;
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: scale-down;
+                    width: 100%;
+                    height: 100%;
                     border-radius: 35px;
+                    object-fit: cover;
                 }
             }
 
@@ -427,19 +427,25 @@ section{
                         height: 100%;
                         border-radius: 35px;
                         object-fit: cover;
+                        filter: brightness(50%);
+                    }
+
+                    img:hover{
+                        transition: filter 0.5s ease;
+                        filter: brightness(100%);
+                    }
+
+                    p{
+                        position: absolute;
+                        color: white;
                     }
                 }
-
-
             }
         }
     }
 
     section:nth-of-type(5){
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+
     }
 
     section:nth-of-type(6){
@@ -504,11 +510,6 @@ section{
     }
 }
 
-.containerContactanos{
-    width: 100vw;
-    height: 100vh;
-
-}
 
 .containerQuienesSomos{
     width: 100vw;
@@ -523,10 +524,14 @@ section{
         align-items: end;
         gap: 2rem;
         padding: 30vh 6vw 0 6vw;
+        background-image: url("Fondo-QuienesSomos.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         span, b, p{
             text-align: end;
-            width: 50%;
+            width: 40%;
             height: auto;
         }
 
@@ -535,10 +540,12 @@ section{
         }
 
         b{
+            color: white;
             font-size: 2rem;
         }
 
         p{
+            color: white;
             font-size: 1.5rem;
         }
     }

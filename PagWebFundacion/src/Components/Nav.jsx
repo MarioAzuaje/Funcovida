@@ -17,7 +17,7 @@ function Nav() {
                         <div></div>
                     </div>
                     <div className="Links">
-                        <NavLink to={"/Contactanos"}>Contáctanos</NavLink>
+                        <a href="https://wa.link/kgp6xy" target="_blank">Contáctanos</a>
                         <div></div>
                     </div>
                 </div>
