@@ -120,11 +120,8 @@ return (
                     (
                         <p></p>
                     )}
-
                 </p>
-
                 <button className='button'><a href="https://www.asambleanacional.gob.ve/storage/documentos/leyes/ley-para-la-promocion-y-proteccion-del-derecho-a-la-igualdad-de-las-personas-con-vih-o-sida-y-sus-familiares-20211026151439.pdf" target="_blank">Leer mas...</a></button>
-                
             </div>
 
             <div className='containerLeyes'>

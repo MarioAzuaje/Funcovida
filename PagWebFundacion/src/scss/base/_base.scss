@@ -187,9 +187,13 @@ section{
         font-weight: 500;
     }
 
-    p, ol, b{
-        font-size: 1.4rem;
+    ol{
         padding: 0 6vw 0 0;
+        font-size: 1.4rem;
+    }
+
+    p, b{
+        font-size: 1.4rem;
     }
 }
 
@@ -764,6 +768,10 @@ section{
         padding: 5%;
         gap: 0.1rem;
         background-color: var(--rosaTarjeta);
+
+        b,p{
+            padding: 0;
+        }
 
         b{
             width: 100%;
