@@ -11,7 +11,7 @@ html, body{
 
 .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
     position: absolute;
-    z-index: -1;
+    z-index: -10;
 }
 
 .mancha:nth-of-type(1){
@@ -165,9 +165,21 @@ section{
         font-weight: 500;
     }
 
-    p, ol{
+    p, ol, b{
         font-size: 1.4rem;
     }
+}
+
+.button{
+    width: 200px;
+    height: 6vh;
+    border-radius: 9999px;
+    background-color: var(--rojoFunco);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 2%;
 }
 
 .containerIndex{
@@ -234,17 +246,6 @@ section{
                         text-align: center;
                     }
     
-                    button{
-                        width: 200px;
-                        height: 6vh;
-                        border-radius: 9999px;
-                        background-color: var(--rojoFunco);
-                        color: white;
-                        font-size: 1.3rem;
-                        font-weight: 500;
-                        transition: all 0.2s ease;
-                        margin-bottom: 2%;
-                    }
     
                     .containerFlecha{
                         display: flex;
@@ -346,6 +347,10 @@ section{
             flex-direction: column;
             justify-content: center;
             gap: 4rem;
+
+            p{
+                height: 40%;
+            }
         }
 
         .containerLeyes{
@@ -364,8 +369,14 @@ section{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 35px;
-                background-color: aqua;
+
+                img{
+                    display: flex;
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: scale-down;
+                    border-radius: 35px;
+                }
             }
 
             .container3Leyes{
@@ -381,12 +392,20 @@ section{
                     width: 24%;
                     height: 100%;
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    background-color: blueviolet;
-                    border-radius: 35px;
+                    cursor: pointer;
+
+                    img{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 35px;
+                        object-fit: cover;
+                    }
                 }
+
+
             }
         }
     }
@@ -456,6 +475,46 @@ section{
             justify-content: center;
             align-items: center;
             gap: 2rem;
+        }
+    }
+}
+
+.containerContactanos{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.containerQuienesSomos{
+    width: 100vw;
+    height: 100vh;
+
+    div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        gap: 2rem;
+        padding: 30vh 6vw 0 6vw;
+
+        span, b, p{
+            text-align: end;
+            width: 50%;
+            height: auto;
+        }
+
+        span{
+            font-size: 3rem;
+        }
+
+        b{
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.5rem;
         }
     }
 }

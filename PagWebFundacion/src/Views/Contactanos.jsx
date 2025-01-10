@@ -1,11 +1,17 @@
 import Nav from '../Components/Nav'
+import Footer from '../Components/Footer'
 
 function Contactanos() {
     return (
-        <div>
+        <>
             <Nav />
+            <div className='containerContactanos'>
 
-        </div>
+
+                
+            </div>
+            <Footer/>
+        </>
     )
 }
 
