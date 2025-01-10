@@ -37,7 +37,7 @@ return (
                     </div>
                 </div>
                 <div>
-                    <Logo Widthx={"600px"} Heighty={"600px"}/>
+                    <Logo className="logoBienvenida"/>
                 </div>
             </div>
         </section>
