@@ -88,24 +88,28 @@ return (
                 <h2>Ley que Protege a <br /> los Pacientes de <span> VIH</span></h2>
 
 
-                <p className='Articulo'>
-                    {Ley1 ? (<b>Ley para la Promoción y Protección del Derecho a la Igualdad de las Personas <br /> con VIH o Sida y sus Familiares.</b>) :
-                    Ley2 ? ( <b>La Ley de VIH cuenta con todo un apartado sobre los mecanismos para el cumplimiento de las normas en ella contenida (Capítulo 7).</b>) :
-                    Ley3 ? (<b>Dictámen de INPSASEL, de fecha 08 de agosto de 2007</b> ) :
-                    (
-                        <p></p>
-                    )}
+                <div className='Articulo'>
+                    <div>
+                        {Ley1 ? (<b>Ley para la Promoción y Protección del Derecho a la Igualdad de las Personas <br /> con VIH o Sida y sus Familiares.</b>) :
+                        Ley2 ? ( <b>La Ley de VIH cuenta con todo un apartado sobre los mecanismos para el cumplimiento de las normas en ella contenida (Capítulo 7).</b>) :
+                        Ley3 ? (<b>Dictámen de INPSASEL, de fecha 08 de agosto de 2007</b> ) :
+                        (
+                            <p></p>
+                        )}
+                    </div>
 
                     <br />
                     <br />
 
-                    {Ley1 ? (<p>La presente Ley tiene por objeto promover y proteger el derecho a la igualdad de todas las personas con el Virus de Inmunodeficiencia Humana (VIH) y el Síndrome de Inmunodeficiencia Adquirida (SIDA), así como el de sus familiares, a los fines de asegurar que disfruten y ejerzan todos sus derechos, garantías, deberes y responsabilidades, sin discriminación alguna, entre ellas, las derivadas de su condición de salud.</p>) :
-                    Ley2 ? ( <p>La violación o el incumplimiento de sus disposiciones implica sanciones administrativas, civil y/o incluso penales. La ley dispone que están legitimados para accionar y proteger los derechos consagrados en la Ley, la propia persona con VIH o sus familiares, el Ministerio Público y la Defensoría del Pueblo. En consecuencia, el Ministerio Público, en caso de acciones que revistan carácter penal, y la Defensoría del Pueblo, son instancias públicas a las que se puede acudir cuando se trata de vulneraciones al derecho de personas con VIH. Asimismo, en nuestro país existen distintas organizaciones que brindan apoyo legal y sociales a quienes han sufrido discriminación por tener VIH.</p>) :
-                    Ley3 ? (<p>En Venezuela está prohibido exigir pruebas de VIH como requisito para conseguir o mantener un empleo. Esta práctica es considerada discriminatoria y viola los derechos de los trabajadores. Tanto el Estado como instituciones como el Inpsasel velan por cumplir esta normativa. Los laboratorios tampoco pueden realizar estas pruebas a menos que el trabajador las solicite personalmente y sea el único autorizado a conocer los resultados.</p> ) :
-                    (
-                        <p></p>
-                    )}
-                </p>
+                    <div>
+                        {Ley1 ? (<p>La presente Ley tiene por objeto promover y proteger el derecho a la igualdad de todas las personas con el Virus de Inmunodeficiencia Humana (VIH) y el Síndrome de Inmunodeficiencia Adquirida (SIDA), así como el de sus familiares, a los fines de asegurar que disfruten y ejerzan todos sus derechos, garantías, deberes y responsabilidades, sin discriminación alguna, entre ellas, las derivadas de su condición de salud.</p>) :
+                        Ley2 ? ( <p>La violación o el incumplimiento de sus disposiciones implica sanciones administrativas, civil y/o incluso penales. La ley dispone que están legitimados para accionar y proteger los derechos consagrados en la Ley, la propia persona con VIH o sus familiares, el Ministerio Público y la Defensoría del Pueblo. En consecuencia, el Ministerio Público, en caso de acciones que revistan carácter penal, y la Defensoría del Pueblo, son instancias públicas a las que se puede acudir cuando se trata de vulneraciones al derecho de personas con VIH. Asimismo, en nuestro país existen distintas organizaciones que brindan apoyo legal y sociales a quienes han sufrido discriminación por tener VIH.</p>) :
+                        Ley3 ? (<p>En Venezuela está prohibido exigir pruebas de VIH como requisito para conseguir o mantener un empleo. Esta práctica es considerada discriminatoria y viola los derechos de los trabajadores. Tanto el Estado como instituciones como el Inpsasel velan por cumplir esta normativa. Los laboratorios tampoco pueden realizar estas pruebas a menos que el trabajador las solicite personalmente y sea el único autorizado a conocer los resultados.</p> ) :
+                        (
+                            <p></p>
+                        )}
+                    </div>
+                </div>
                 <button className='button'><a href="https://www.asambleanacional.gob.ve/storage/documentos/leyes/ley-para-la-promocion-y-proteccion-del-derecho-a-la-igualdad-de-las-personas-con-vih-o-sida-y-sus-familiares-20211026151439.pdf" target="_blank">Leer mas...</a></button>
             </div>
 
