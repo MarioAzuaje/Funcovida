@@ -1,10 +1,15 @@
 import Nav from "../Components/Nav"
+import Footer from "../Components/Footer"
 
 function Farmacia() {
     return (
-        <div>
+        <>
             <Nav />
-        </div>
+            <div className="containerFarmacia">
+
+            </div>
+            <Footer/>
+        </>
     )
 }
 

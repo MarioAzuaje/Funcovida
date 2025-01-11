@@ -9,6 +9,11 @@ html {
     height: 80px;
 }
 
+@media screen and  (max-width: 1200px) {
+    p{
+        font-size: 0.1rem;}
+}
+
 .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
     position: absolute;
     z-index: -10;
@@ -541,7 +546,6 @@ section{
     }
 }
 
-
 .containerQuienesSomos{
     width: 100vw;
     height: 100vh;
@@ -580,6 +584,11 @@ section{
             font-size: 1.5rem;
         }
     }
+}
+
+.containerFarmacia{
+    width: 100vw;
+    height: 100vh;
 }
 
 .footerContainer{

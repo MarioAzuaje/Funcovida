@@ -148,9 +148,9 @@ return (
                 <div>
                     <img src="persona.jpg" alt="" />
 
-                    <b>Persona 1</b>
+                    <b>Raíza Farnataro</b>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod.</p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod."</p>
                 </div>
             </div>
             <div className='container1S6'>
