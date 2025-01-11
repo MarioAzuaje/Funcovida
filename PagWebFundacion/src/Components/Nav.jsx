@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 function Nav() {
 
     return (
-        <div className="navbar">
+        <header className="navbar">
             <div className="containerNav">
             <Logo width={"60px"} height={"60px"} className="logoBar"/>
                 <div>
@@ -25,7 +25,7 @@ function Nav() {
             </div>
 
             <div className="lineNav"></div>
-        </div>
+        </header>
     )
 }
 

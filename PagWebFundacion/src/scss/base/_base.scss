@@ -4,6 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .logo{
     width: 80px;
     height: 80px;
@@ -206,7 +212,7 @@ section{
 
 .button{
     width: 200px;
-    height: 6vh;
+    min-height: 6vh;
     border-radius: 9999px;
     background-color: var(--rojoFunco);
     color: white;
@@ -396,7 +402,7 @@ section{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 4rem;
+            gap: 2rem;
 
             p{
                 height: 35%;
@@ -585,11 +591,13 @@ section{
 .footerContainer{
     width: 100vw;
     height: 22vh;
+    min-height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     background-color: #2C2C2C;
+    margin-top: auto;
 
     .footer{
         width: 100%;
@@ -635,14 +643,20 @@ section{
             }
         }
     }
+}
 
-    .copyrigth{
-        width: 100%;
-        height: 20%;
-        background-color: #232222;
-        display: flex;
-        align-items: center;
+.copyrigth{
+    width: 100%;
+    height: 20%;
+    background-color: #232222;
+    display: flex;
+    align-items: center;
+
+    p{
+        color: white;
+        font-size: 1.1rem;
     }
+
 }
 
 .lateralSlider, .centralSlider {
@@ -832,21 +846,18 @@ section{
     .containerImg{
         width: 100%;
         height: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        min-height: 30%;
         border-radius: 40px 40px 0 0;
         background-color: black;
     }
 
     .containerText{
         width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
+        max-height: 70%;
         padding: 5%;
         gap: 0.1rem;
         background-color: var(--rosaTarjeta);
+        word-wrap: break-word;
 
         b,p{
             padding: 0;

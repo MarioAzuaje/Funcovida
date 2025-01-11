@@ -7,6 +7,7 @@ function getYear() {
 
 function Footer () {
     return (
+            <footer>
             <div className="footerContainer">
                 <div className="footer">
                     <Logo className="logoFooter"/>
@@ -39,10 +40,11 @@ function Footer () {
                         <p>Ubicacion</p>
                     </div>
                 </div>
-                <div className="copyrigth">
-                    <p>Copyright © 2024 - {getYear()} FuncoVida®. All rights reserved.</p>
-                </div>
             </div>
+            <div className="copyrigth">
+                <p>Copyright © 2024 - {getYear()} FuncoVida®. All rights reserved.</p>
+            </div>
+            </footer>
     )
 }
 
