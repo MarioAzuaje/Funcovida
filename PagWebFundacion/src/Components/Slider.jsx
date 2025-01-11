@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 
 
-function Slider({ children }) {
+function Slider({ images }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slideDone, setSlideDone] = useState(true);
   const [timeID, setTimeID] = useState(null);
+  const [showDescription, setShowDescription] = useState(false);
 
   useEffect(() => {
     if (slideDone) {
@@ -20,7 +21,7 @@ function Slider({ children }) {
 
   const slideNext = () => {
     setActiveIndex((val) => {
-      if (val >= children.length - 1) {
+      if (val >= images.length - 1) {
         return 0;
       } else {
         return val + 1;
@@ -31,7 +32,7 @@ function Slider({ children }) {
   const slidePrev = () => {
     setActiveIndex((val) => {
       if (val <= 0) {
-        return children.length - 1;
+        return images.length - 1;
       } else {
         return val - 1;
       }
@@ -51,25 +52,32 @@ function Slider({ children }) {
     }
   };
 
+  const handleBurbujaClick = () => {
+    setShowDescription(!showDescription);
+  };
+
   return (
     <div
       className="container__slider"
       onMouseEnter={AutoPlayStop}
       onMouseLeave={AutoPlayStart}
     >
-      {children.map((item, index) => {
-        return (
-          <div
-            className={"slider__item slider__item-active-" + (activeIndex + 1)}
-            key={index}
-          >
-            {item}
-          </div>
-        );
-      })}
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`slider__item slider__item-active-${activeIndex + 1}`}
+        >
+          <img src={image.url} alt={image.alt} />
+          {showDescription && (
+            <div className="sliderDescription">
+              <p>{image.description}</p>
+            </div>
+          )}   
+        </div>
+      ))}
 
       <div className="container__slider__links">
-        {children.map((item, index) => {
+        {images.map((item, index) => {
           return (
             <button
               key={index}
@@ -105,7 +113,10 @@ function Slider({ children }) {
       >
         {" <"}
       </button>
-      <button className="slider__burbuja">
+      <button
+        className="slider__burbuja"
+        onClick={handleBurbujaClick}
+      >
         <img src="icons/burbuja.svg" alt="" />  
       </button>
     </div>
