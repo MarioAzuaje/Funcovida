@@ -48,10 +48,10 @@ return (
             <div className='containerV'>
                 <h2><span>Visión</span> de la  <br /> Organización</h2>
                 <p>
-                Tiene como visión convertirse en una Organización NO Gubernamental líder para la Defensa de los Derechos de las personas que padecen de VIH/SIDA y otras infecciones de transmisión sexual; a través de estrategias y herramientas necesarias para enfrentar las implicaciones del VIH/SIDA.
-                <br />
-                <br />
-                El mejoramiento de la calidad de vida a través de la educación, prevención, asistencia médica y atención psicológica, con la participación de los actores a todo nivel, organizaciones públicas o privadas, naturales o júridicas organizaciones no gubernamentales, asociaciones afines y comunitarias en general.
+                    Tiene como visión convertirse en una Organización NO Gubernamental líder para la Defensa de los Derechos de las personas que padecen de VIH/SIDA y otras infecciones de transmisión sexual; a través de estrategias y herramientas necesarias para enfrentar las implicaciones del VIH/SIDA.
+                    <br />
+                    <br />
+                    El mejoramiento de la calidad de vida a través de la educación, prevención, asistencia médica y atención psicológica, con la participación de los actores a todo nivel, organizaciones públicas o privadas, naturales o júridicas organizaciones no gubernamentales, asociaciones afines y comunitarias en general.
                 </p>
             </div>
 
@@ -64,7 +64,7 @@ return (
         <section>
         <div className='containerS2'>
                 <div className='lateralSlider'>
-                <Slider images={imageSlider1} />
+                <Slider images={imageSlider2} />
                 </div>
             </div>
 
@@ -154,7 +154,7 @@ return (
 
                     <b>Raíza Farnataro</b>
 
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod."</p>
+                    <p>&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod.&quot; </p>
                 </div>
             </div>
             <div className='container1S6'>

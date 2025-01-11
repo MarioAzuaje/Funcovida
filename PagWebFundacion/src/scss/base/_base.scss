@@ -247,7 +247,7 @@ section{
                 height: 100%;
                 letter-spacing: 0.3rem;
                 font-style: normal;
-                padding: 27vh 0 0 6vw;
+                padding: 20vh 0 0 6vw;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -409,8 +409,9 @@ section{
             justify-content: center;
             gap: 2rem;
 
-            p{
+            .Articulo{
                 height: 35%;
+                margin-bottom: 3%;
             }
         }
 
@@ -561,10 +562,10 @@ section{
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: end;
         gap: 2rem;
-        padding: 30vh 6vw 0 6vw;
+        padding: 10vh 6vw 0 6vw;
         background-image: url("Fondo-QuienesSomos.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -582,12 +583,16 @@ section{
 
         b{
             color: white;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         p{
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+
+            span{
+                font-size: 1.2rem;
+            }
         }
     }
 }
