@@ -28,3 +28,16 @@ export const imageSlider2 = [
         alt: "Imagen de Prueba"
     },
 ];
+
+export const imageSlider3 = [
+    {
+        url: 'imageSlider3/prueba5.jpg',
+        description: "Te ayudamos",
+        alt: "Imagen de Prueba"
+    },
+    {
+        url: 'imageSlider3/prueba6.jpg',
+        description: "XD",
+        alt: "Imagen de Prueba2"
+    }
+];

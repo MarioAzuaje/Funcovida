@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
 import { Logo } from '../Components/Logo'
-import { imageSlider1 } from '../data/imageSlider'
+import { imageSlider1, imageSlider2, imageSlider3 } from '../data/imageSlider'
 import Slider from '../Components/Slider'
 import Tarjeta from '../Components/Tarjeta'
 
@@ -57,31 +57,14 @@ return (
 
             <div className='containerS1'>
                 <div className='lateralSlider'>
-                    <Slider>
-                        {imageSlider1.map((image, index) => {
-                            return (
-                            <>
-                            <img key={index} src={image.url} alt={image.alt} />
-
-                            </>
-                        );
-                        })}
-                    </Slider>
+                <Slider images={imageSlider1} />
                 </div>
             </div>
         </section>
         <section>
         <div className='containerS2'>
                 <div className='lateralSlider'>
-                    <Slider>
-                        {imageSlider1.map((image, index) => {
-                            return (
-                            <>
-                            <img key={index} src={image.url} alt={image.alt}/>
-                            </>
-                        );
-                        })}
-                    </Slider>
+                <Slider images={imageSlider1} />
                 </div>
             </div>
 
@@ -153,7 +136,9 @@ return (
             </div>
         </section>
         <section>
-
+            <div className='centralSlider'>
+                <Slider images={imageSlider3} />
+            </div>
         </section>
         <section>
             <img src="manchas/Mancha_1_Section_6.png" alt="Mancha" className='mancha3'/>

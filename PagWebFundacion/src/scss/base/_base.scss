@@ -104,7 +104,14 @@ span{
     height: auto;
 }
 
-.logoBar:hover {
+.logoFooter {
+    width: 15%;
+    min-width: 45px;
+    max-width: 60px;
+    height: auto;
+}
+
+.logoBar:hover, .logoFooter:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -209,6 +216,10 @@ section{
     margin-bottom: 2%;
 }
 
+.button:hover{
+    transform: scale(1.1);
+}
+
 .containerIndex{
     section:nth-of-type(1){
         .containerBienvenida{
@@ -278,6 +289,20 @@ section{
                         justify-content: center;
                         align-items: center;
                     }
+
+                    .containerFlecha svg {
+                        animation: moverFlecha 1s ease-in-out infinite alternate;
+                      }
+                      
+                      @keyframes moverFlecha {
+                        0% {
+                          transform: translate(0, 0);
+                        }
+                        100% {
+                          transform: translate(0, 10px);
+                        }
+                      }
+
                 }
             }
     
@@ -445,7 +470,13 @@ section{
     }
 
     section:nth-of-type(5){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12%;
 
+        
     }
 
     section:nth-of-type(6){
@@ -581,10 +612,10 @@ section{
             cursor: pointer;
         }
 
-        .socialMediaIcon::hover {
-            transform: scale(1.1);
+        .socialMediaIcon:hover {
+            transform: scale(1.3);
             opacity: 0.8;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.3s ease-in-out;
         }
 
         .footerInfo {
@@ -614,9 +645,8 @@ section{
     }
 }
 
-.lateralSlider {
-    width: 40%;
-    height: 50%;
+.lateralSlider, .centralSlider {
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,27 +663,58 @@ section{
         border-radius: 40px 40px 40px 0px;
         border: #232222 solid 2px;
         box-shadow: inset 10em 1em 5em -8em rgba(0, 0, 0, 0.3), inset -10em 1em 5em -8em rgba(0, 0, 0, 0.3);
-        }
+    }
 
         .container__slider img {
             margin: 0;
             display: block;
         }
 
+        .sliderDescription {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 70%;
+            left: 0%;
+            background-color: rgba(0, 0, 0, 0.2);
+            text-align: center;
+
+            p {
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+
         .slider__burbuja {
         position: absolute;
-        bottom: 18%;
-        left: 5%;
+        bottom: 15%;
+        left: 6%;
         transform: translateX(-50%);       
         z-index: 5;
         }
 
         .slider__burbuja > img {
         position: absolute;
-        width: 45px;
+        width: 65px;
         height: auto;
         border-radius: 50px;
         background-color: rgba(255, 255, 255, 0.5);
+        animation: moverBurbuja 1.5s ease-in-out infinite alternate;
+        }
+          
+        @keyframes moverBurbuja {
+            0% {
+              transform: translate(0, 0);
+            }
+            100% {
+              transform: translate(0, 5px);
+            }
+        }
+
+        .slider__burbuja:hover img {
+            background-color: var(--rojoFunco);
+            transform: scale(1.1);
+            transition: transform 0.3s ease, background-color 0.8s ease;
         }
         
         .container__slider > button {
@@ -687,8 +748,8 @@ section{
         
         .container__slider__links-small {
         position: relative;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         padding: 0;
         border-radius: 50%;
         outline: none;
@@ -702,6 +763,8 @@ section{
         .container__slider__links-small-active {
         background-color: black;
         }
+
+        
         
         .slider__item {
         z-index: -1;
@@ -712,6 +775,8 @@ section{
         object-fit: cover;
         transform: translateX(0);
         transition: transform 1s ease;
+
+
         }
         
         .slider__item-active-1 {
@@ -746,6 +811,13 @@ section{
         width: 100%;
         height: auto;
         }
+}
+
+.centralSlider{
+    width: 80%;
+    min-width: 300px;
+    max-width: 1000px;
+
 }
 
 .Tarjeta{
