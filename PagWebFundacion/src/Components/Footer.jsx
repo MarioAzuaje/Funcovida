@@ -18,7 +18,7 @@ function Footer () {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="https://x.com/funcovida_ddhh?s=11" target="_blank">
                                     <img src="icons/x-logo.svg" alt="X" className="socialMediaIcon" />
                                 </a>
                             </li>

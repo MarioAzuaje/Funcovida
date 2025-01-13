@@ -6,5 +6,4 @@ function Medicamento ({imagen, nombre, alt, onClick}) {
         </div>
     )
 }
-
 export default Medicamento

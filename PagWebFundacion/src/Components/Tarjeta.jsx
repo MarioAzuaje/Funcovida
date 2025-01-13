@@ -3,7 +3,7 @@ function Tarjeta() {
     return (
         <div className="Tarjeta">
             <div className="containerImg">
-                <img src="imageSlider1/prueba1.jpg" alt="" />
+                <img src="imageSlider3/img1.jfif" alt="" />
             </div>
             <div className="containerText">
                 <b>

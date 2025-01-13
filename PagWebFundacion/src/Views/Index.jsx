@@ -159,7 +159,6 @@ return (
                         <Tarjeta key={index}/>
                     )
                 })}
-
             </div>
         </section>
         <Footer/>

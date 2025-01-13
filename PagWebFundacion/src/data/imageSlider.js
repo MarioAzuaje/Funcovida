@@ -1,43 +1,68 @@
 export const imageSlider1 = [
     {
-        url: 'imageSlider1/prueba1.jpg',
-        description: "Te ayudamos",
-        alt: "Imagen de Prueba"
+        url: 'imageSlider1/img1.jfif',
+        description: "Operativo en la prisión",
+        alt: "ImagenPrision1"
     },
     {
-        url: 'imageSlider1/prueba2.jpg',
-        description: "XD",
-        alt: "Imagen de Prueba2"
+        url: 'imageSlider1/img2.jfif',
+        description: "Operativo en la prisión",
+        alt: "ImagenPrision2"
     },
     {
-        url: 'imageSlider1/prueba3.jpg',
-        description: "XD",
-        alt: "Imagen de Prueba3"
+        url: 'imageSlider1/img3.jfif',
+        description: "Operativo en la prisión",
+        alt: "ImagenPrision3"
+    },
+    {
+        url: 'imageSlider1/img4.jfif',
+        description: "Operativo en la prisión",
+        alt: "ImagenPrision4"
     },
 ];
 
 export const imageSlider2 = [
     {
-        url: 'imageSlider2/prueba1.jpg',
-        description: "FFFFF",
-        alt: "Imagen de Prueba"
+        url: 'imageSlider2/img1.jfif',
+        description: "",
+        alt: "Imagen"
     },
     {
-        url: 'imageSlider2/prueba2.jpg',
-        description: "AJAJJAJAA",
-        alt: "Imagen de Prueba"
+        url: 'imageSlider2/img2.jfif',
+        description: "",
+        alt: "Imagen"
+    },
+    {
+        url: 'imageSlider2/img3.jfif',
+        description: "",
+        alt: "Imagen"
+    },
+    {
+        url: 'imageSlider2/img4.jfif',
+        description: "",
+        alt: "Imagen"
     },
 ];
 
 export const imageSlider3 = [
     {
-        url: 'imageSlider3/prueba5.jpg',
-        description: "Te ayudamos",
-        alt: "Imagen de Prueba"
+        url: 'imageSlider3/img1.jfif',
+        description: "Charlas",
+        alt: "ImagenCharlas1"
     },
     {
-        url: 'imageSlider3/prueba6.jpg',
-        description: "XD",
-        alt: "Imagen de Prueba2"
-    }
+        url: 'imageSlider3/img2.jfif',
+        description: "Charlas",
+        alt: "ImagenCharlas2"
+    },
+    {
+        url: 'imageSlider3/img3.jfif',
+        description: "Charlas",
+        alt: "ImagenCharlas3"
+    },
+    {
+        url: 'imageSlider3/img4.jfif',
+        description: "Charlas",
+        alt: "ImagenCharlas4"
+    },
 ];
