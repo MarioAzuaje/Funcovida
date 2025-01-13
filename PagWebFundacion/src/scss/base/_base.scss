@@ -999,6 +999,14 @@ section{
             height: 95vh;
         }
 
+        section:nth-of-type(6) {
+            .container1S6 {
+                .Tarjeta:last-child{
+                    grid-column-end: -1;
+                  }
+            }
+        }
+
     }
 
     .footerContainer{
