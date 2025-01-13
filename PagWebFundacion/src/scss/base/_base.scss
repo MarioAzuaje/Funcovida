@@ -16,7 +16,12 @@ body {
     height: 80px;
 }
 
-.mancha, .mancha1, .mancha2, .mancha3, .mancha4, .mancha5{
+@media screen and  (max-width: 1200px) {
+    p{
+        font-size: 0.1rem;}
+}
+
+.mancha, .mancha1, .mancha2, .mancha3, .mancha4{
     position: absolute;
     z-index: -10;
 }
@@ -207,11 +212,11 @@ span{
 
 section{
     width: 100vw;
-    height: 95vh;
     z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 9vh;
 
     h2{
         font-size: 4rem;
@@ -244,8 +249,10 @@ section{
     transform: scale(1.1);
 }
 
-.containerIndex{
     section:nth-of-type(1){
+        height: 95vh;
+        
+
         .containerBienvenida{
             width: 100%;
             height: 100%;
@@ -499,7 +506,6 @@ section{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 12%;
 
         
     }
@@ -510,15 +516,16 @@ section{
         justify-content: center;
         align-items: center;
 
-        .containerS6{
+        .containerS6 {
             width: 100%;
             height: 40%;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 8vh;
 
             div{
-                width: 50%;
+                width: 60%;
                 height: 80%;
                 border-radius: 30px;
                 background-color: var(--rosaTarjeta);
@@ -555,16 +562,16 @@ section{
             }
         }
 
-        .container1S6{
+        .container1S6 {
             width: 100%;
-            height: 60%;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            justify-items: center;
             justify-content: center;
-            align-items: center;
-            gap: 2rem;
+            gap: 1.5rem;
         }
     }
-}
+
 
 .containerQuienesSomos{
     width: 100vw;
@@ -694,7 +701,7 @@ section{
     height: 22vh;
     min-height: 150px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     color: white;
     background-color: #2C2C2C;
@@ -709,7 +716,7 @@ section{
         justify-content: space-around;
         align-items: center;
 
-        & ul{
+        .footerSocial ul{
             display: flex;
             flex-direction: row;
             gap: 3rem;
@@ -733,6 +740,7 @@ section{
             justify-content: center;
             align-items: center;
             gap: 0.5rem;
+            margin-top: 3%;
 
             p:first-child {
                 grid-column: 1 / -1;
@@ -932,25 +940,25 @@ section{
 }
 
 .Tarjeta{
-    width: 15%;
-    height: 90%;
+    width: 85%;
+    min-width: 300px;
+    min-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-
     .containerImg{
-        width: 100%;
-        height: 50%;
-        min-height: 30%;
-        border-radius: 40px 40px 0 0;
-        background-color: black;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 40px 40px 0 0;
+            margin-bottom: -0.4rem;
+        }
     }
 
     .containerText{
         width: 100%;
-        max-height: 70%;
         padding: 5%;
         gap: 0.1rem;
         background-color: var(--rosaTarjeta);
@@ -977,5 +985,157 @@ section{
             font-size: 1rem;
         }
 
+    }
+}
+
+// Cuadricula
+@media screen and  (max-width: 1350px) {
+    .containerIndex {
+        section:nth-of-type(6) {
+            .container1S6 {
+                .Tarjeta:last-child{
+                    grid-column-end: 3;
+                  }
+            }
+        }
+    }
+}
+
+
+// Escritorio
+
+@media screen and  (max-width: 1224px) {
+    .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
+        display: none;
+    }
+
+    section {
+        height: auto;
+    }
+}
+
+// Intermedio (Flex)
+
+@media screen and  (max-width: 1024px) {
+    .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
+        display: none;
+    }
+
+    .containerIndex {
+        .responsiveLeftRight {
+            flex-direction: column;
+        }
+    
+        .responsiveRightLeft {
+            flex-direction: column-reverse; 
+        }
+
+        section:nth-of-type(2) {
+            .containerV, .containerS1 {
+                width: 85%;
+            }
+
+            .containerV {
+                padding: 0;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        section:nth-of-type(3) {
+            .containerS2, .containerMision {
+                width: 85%;
+            }
+
+            .containerMision {
+                padding: 0;
+                padding-left: 5vw;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }  
+        }
+
+        section:nth-of-type(4) {
+            .containerV, div:nth-of-type(2) {
+                width: 85%;
+            }
+
+            .Ley {
+                display: none;
+            }
+
+            .containerV {
+                padding: 0;
+            }
+
+        }
+
+        section:nth-of-type(6){
+            .containerS6 {
+                div {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+// Tablet
+
+@media screen and  (max-width: 768px) {
+    .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
+        display: none;
+    }
+
+    .containerIndex{
+        section:nth-of-type(1){
+            height: 95vh;
+        }
+
+        section:nth-of-type(6) {
+            .container1S6 {
+                .Tarjeta:last-child{
+                    grid-column-end: -1;
+                  }
+            }
+        }
+
+    }
+
+    .footerContainer{
+        height: auto;
+            .footer {
+                .footerSocial {
+                    padding: 1rem;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                    }
+                }
+
+                .footerInfo {
+                    margin-top: 0;
+                    img {
+                        width: 45px;
+                    }
+
+                    p:first-child {
+                        grid-column: 1 / -1;
+                        text-align: center;
+                        margin-bottom: 10%;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+}   
+
+}
+
+// Celular
+
+@media screen and  (max-width: 425px) { 
+    .mancha, .mancha1, .mancha2, .mancha3, .mancha4{
+        display: none;
     }
 }

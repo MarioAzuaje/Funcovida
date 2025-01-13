@@ -10,7 +10,7 @@ function Footer () {
             <div className="footerContainer">
                 <div className="footer">
                     <Logo className="logoFooter"/>
-                    <div>
+                    <div className="footerSocial">
                         <ul>
                             <li>
                                 <a href="https://www.instagram.com/concienciaporlavidavzla/" target="_blank">
