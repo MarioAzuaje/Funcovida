@@ -43,15 +43,15 @@ return (
                 </div>
             </div>
         </section>
-        <section>
+        <section className='responsiveLeftRight'>
             <img src="manchas/Mancha_1_Section_2.png" alt="Mancha" className='mancha1'/>
             <div className='containerV'>
                 <h2><span>Visión</span> de la  <br /> Organización</h2>
                 <p>
-                    Tiene como visión convertirse en una Organización NO Gubernamental líder para la Defensa de los Derechos de las personas que padecen de VIH/SIDA y otras infecciones de transmisión sexual; a través de estrategias y herramientas necesarias para enfrentar las implicaciones del VIH/SIDA.
-                    <br />
-                    <br />
-                    El mejoramiento de la calidad de vida a través de la educación, prevención, asistencia médica y atención psicológica, con la participación de los actores a todo nivel, organizaciones públicas o privadas, naturales o júridicas organizaciones no gubernamentales, asociaciones afines y comunitarias en general.
+                Tiene como visión convertirse en una Organización NO Gubernamental líder para la Defensa de los Derechos de las personas que padecen de VIH/SIDA y otras infecciones de transmisión sexual; a través de estrategias y herramientas necesarias para enfrentar las implicaciones del VIH/SIDA.
+                <br />
+                <br />
+                El mejoramiento de la calidad de vida a través de la educación, prevención, asistencia médica y atención psicológica, con la participación de los actores a todo nivel, organizaciones públicas o privadas, naturales o júridicas organizaciones no gubernamentales, asociaciones afines y comunitarias en general.
                 </p>
             </div>
 
@@ -61,14 +61,14 @@ return (
                 </div>
             </div>
         </section>
-        <section>
+        <section className='responsiveRightLeft'>
         <div className='containerS2'>
                 <div className='lateralSlider'>
                 <Slider images={imageSlider2} />
                 </div>
             </div>
 
-            <div>
+            <div className='containerMision'>
                 <h2><span>Misión</span> de la <br /> Organización</h2>
                 <ol>
                     <li>Mejorar la calidad de vida de las personas, tanto infectados como saludables, mediante proyectos y estrategias que logren la prevención y control de la epidemia del SIDA/VIH.</li>
@@ -81,12 +81,11 @@ return (
             <img src="manchas/Mancha_1_Section_3.png" alt="Mancha" className='mancha2'/>
             <img src="manchas/Mancha_2_Section_3.png" alt="Mancha" className='mancha2'/>
         </section>
-        <section>
+        <section className='responsiveLeftRight'>
             <img src="manchas/Mancha_1_Section_4.png" alt="Mancha" className='mancha4'/>
             <img src="manchas/Mancha_2_Section_4.png" alt="Mancha" className='mancha4'/>
             <div className='containerV'>
                 <h2>Ley que Protege a <br /> los Pacientes de <span> VIH</span></h2>
-
 
                 <div className='Articulo'>
                     <div>
@@ -145,16 +144,13 @@ return (
             </div>
         </section>
         <section>
-            <img src="manchas/Mancha_1_Section_6.png" alt="Mancha" className='mancha3'/>
-            <img src="manchas/Mancha_2_Section_6.png" alt="Mancha" className='mancha3'/>
-
             <div className='containerS6'>
                 <div>
                     <img src="persona.jpg" alt="" />
 
                     <b>Raíza Farnataro</b>
 
-                    <p>&quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod.&quot; </p>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod."</p>
                 </div>
             </div>
             <div className='container1S6'>
