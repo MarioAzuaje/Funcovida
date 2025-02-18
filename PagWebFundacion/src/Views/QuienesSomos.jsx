@@ -6,6 +6,7 @@ function QuienesSomos() {
         <>
             <Nav />
             <div className="containerQuienesSomos">
+                <img src="FondoQuienesSomos.jpg" alt="" />
                 <div>
                     <span>¿Quiénes somos?</span>
                     <b>
