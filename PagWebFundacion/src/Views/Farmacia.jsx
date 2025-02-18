@@ -16,6 +16,7 @@ function Farmacia() {
             <img src="manchas/Mancha_1_Section_2.png" alt="mancha5" className="mancha5"/>
             <img src="manchas/Mancha_2_Section_3.png" alt="mancha5" className="mancha5"/>
             <Nav />
+            <h1 className="tituloFarmacia">Medicamentos disponibles</h1>
             <div className="containerFarmacia">
                 <div className="listaMeds">
                     {medicamentos.map((med) => (

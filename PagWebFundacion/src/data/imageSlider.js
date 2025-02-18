@@ -24,45 +24,45 @@ export const imageSlider1 = [
 export const imageSlider2 = [
     {
         url: 'imageSlider2/img1.jfif',
-        description: "",
+        description: "Charla",
         alt: "Imagen"
     },
     {
         url: 'imageSlider2/img2.jfif',
-        description: "",
+        description: "Charla",
         alt: "Imagen"
     },
     {
         url: 'imageSlider2/img3.jfif',
-        description: "",
+        description: "Charla",
         alt: "Imagen"
     },
     {
         url: 'imageSlider2/img4.jfif',
-        description: "",
+        description: "Charla",
         alt: "Imagen"
     },
 ];
 
 export const imageSlider3 = [
     {
-        url: 'imageSlider3/img1.jfif',
-        description: "Charlas",
+        url: 'imageSlider3/Infografia.png',
+        description: "Invitación a la actividad",
         alt: "ImagenCharlas1"
     },
     {
-        url: 'imageSlider3/img2.jfif',
-        description: "Charlas",
+        url: 'imageSlider3/img1.jfif',
+        description: "Conversatorio sobre enfermedades de transmisión sexual",
         alt: "ImagenCharlas2"
     },
     {
-        url: 'imageSlider3/img3.jfif',
-        description: "Charlas",
+        url: 'imageSlider3/img2.jfif',
+        description: "Conversatorio sobre enfermedades de transmisión sexual",
         alt: "ImagenCharlas3"
     },
     {
-        url: 'imageSlider3/img4.jfif',
-        description: "Charlas",
+        url: 'imageSlider3/img3.jfif',
+        description: "Equipo de Funcovida en el IUJO",
         alt: "ImagenCharlas4"
     },
 ];
