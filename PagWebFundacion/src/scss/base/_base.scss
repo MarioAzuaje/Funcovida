@@ -757,8 +757,6 @@ section{
             align-items: center;
             gap: 0.5rem;
             margin-top: 3%;
-            word-break: break-all;
-            hyphens: auto;
 
             p:first-child {
                 grid-column: 1 / -1;
@@ -1235,6 +1233,7 @@ section{
                 }
 
                 .footerInfo {
+                    word-break: break-all;
                     margin-top: 0;
                     img {
                         width: 45px;
