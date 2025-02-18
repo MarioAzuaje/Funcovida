@@ -35,7 +35,7 @@ function Footer () {
                         <img src="icons/llamada-logo.svg" alt="Telefono" />
                         <p>+58 414-5749563</p>
                         <img src="icons/correo-logo.svg" alt="Correo Electronico" />
-                        <p>correo@gmail.com</p>
+                        <p>ongconcienciaporlavida@hotmail.com</p>
                         <img src="icons/ubi-logo.svg" alt="Telefono" />
                         <p>Venezuela</p>
                     </div>

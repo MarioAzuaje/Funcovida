@@ -146,11 +146,11 @@ return (
         <section>
             <div className='containerS6'>
                 <div>
-                    <img src="persona.jpg" alt="" />
+                    <img src="Raíza Farnataro.jpg" alt="" />
 
                     <b>Raíza Farnataro</b>
 
-                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quod."</p>
+                    <p>"Reconstruyendo esperanzas ante el 0+"</p>
                 </div>
             </div>
             <div className='container1S6'>
