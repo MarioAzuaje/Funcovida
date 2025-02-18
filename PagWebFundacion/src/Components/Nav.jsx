@@ -9,7 +9,7 @@ function Nav() {
             <Logo width={"60px"} height={"60px"} className="logoBar"/>
                 <div>
                     <div className="Links">
-                        <NavLink to={"/Quienes-Somos"}>¿Quiénes somos?</NavLink>
+                        <NavLink to={"/QuienesSomos"}>¿Quiénes somos?</NavLink>
                         <div></div>
                     </div>
                     <div className="Links">
