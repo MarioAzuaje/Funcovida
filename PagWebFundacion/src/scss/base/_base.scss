@@ -570,8 +570,8 @@ section{
     height: 100vh;
 
     img{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         position: absolute;
         z-index: -1;
         object-fit: cover;
@@ -757,6 +757,7 @@ section{
             align-items: center;
             gap: 0.5rem;
             margin-top: 3%;
+            word-wrap: break-word;
 
             p:first-child {
                 grid-column: 1 / -1;
