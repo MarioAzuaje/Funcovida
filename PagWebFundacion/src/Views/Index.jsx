@@ -3,11 +3,11 @@ import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
 import { Logo } from '../Components/Logo'
 import { imageSlider1, imageSlider2, imageSlider3 } from '../data/imageSlider'
+import { tarjetas } from '../data/tarjetas'
 import Slider from '../Components/Slider'
 import Tarjeta from '../Components/Tarjeta'
 
 function Index() {
-    const tarjetas = [1,2,3,4]
     const [Ley1, setLey1] = useState(true);
     const [Ley2, setLey2] = useState(false);
     const [Ley3, setLey3] = useState(false);
@@ -82,8 +82,6 @@ return (
             <img src="manchas/Mancha_2_Section_3.png" alt="Mancha" className='mancha2'/>
         </section>
         <section className='responsiveLeftRight'>
-            <img src="manchas/Mancha_1_Section_4.png" alt="Mancha" className='mancha4'/>
-            <img src="manchas/Mancha_2_Section_4.png" alt="Mancha" className='mancha4'/>
             <div className='containerV'>
                 <h2>Ley que Protege a <br /> los Pacientes de <span> VIH</span></h2>
 
@@ -139,6 +137,7 @@ return (
             </div>
         </section>
         <section>
+            <h2>Eventos</h2>
             <div className='centralSlider'>
                 <Slider images={imageSlider3} />
             </div>
@@ -148,17 +147,17 @@ return (
                 <div>
                     <img src="Raíza Farnataro.jpg" alt="" />
 
-                    <b>Raíza Farnataro</b>
+                    <b>Directora Raíza Farnataro</b>
 
-                    <p>"Reconstruyendo esperanzas ante el 0+"</p>
+                    <p>&#34;Reconstruyendo esperanzas ante el 0+&#34;</p>
                 </div>
             </div>
             <div className='container1S6'>
-                {tarjetas.slice(0,5).map((index) => {
-                    return (
-                        <Tarjeta key={index}/>
-                    )
-                })}
+                {   tarjetas.map((tarjeta) => (
+                        <Tarjeta key={tarjeta.title} title={tarjeta.title} date={tarjeta.date} content={tarjeta.content} imageSrc={tarjeta.src} />
+                    ))
+                }
+                
             </div>
         </section>
         <Footer/>
