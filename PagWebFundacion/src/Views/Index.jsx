@@ -35,7 +35,7 @@ return (
                                 <path transform="translate(0,1097)" d="m0 0"/>
                             </svg>
                         </div>
-                        <p>Desliza para obtener más información</p>
+                        <p className='goodBye'>Desliza para obtener más información</p>
                     </div>
                 </div>
                 <div>

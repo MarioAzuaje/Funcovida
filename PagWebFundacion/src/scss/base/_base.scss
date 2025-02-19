@@ -1006,15 +1006,6 @@ section{
 
 // Cuadricula
 @media screen and  (max-width: 1350px) {
-    .containerIndex {
-        section:nth-of-type(6) {
-            .container1S6 {
-                .Tarjeta:last-child{
-                    grid-column-end: 3;
-                }
-            }
-        }
-    }
 
     .containerQuienesSomos{
         div{
@@ -1173,11 +1164,17 @@ section{
     }
 
     .containerIndex{
-        .containerBienvenida{
-            margin-top: 16%;
+        .containerBienvenida {
+            margin-top: 20vh;
+        }
+        section:nth-of-type(2) {
+            margin-top: 30vh;
         }
         .responsiveLeftRight {
-            margin-top: 30%;
+            margin-top: 10vh;
+        }
+        .responsiveRightLeft {
+            margin-top: 10vh;
         }
         
         section:nth-of-type(1){
@@ -1193,16 +1190,13 @@ section{
                     }
 
             }
-
-        section:nth-of-type(6) {
-            .container1S6 {
-                .Tarjeta:last-child{
-                    grid-column-end: -1;
-                }
-            }
+        
+        section:nth-of-type(5) {
+            margin-top: -10vh;
         }
 
         .lateralSlider, .centralSlider {
+            width: 100%;
             .slider__burbuja {
                 bottom: 25%;
             }
@@ -1235,8 +1229,13 @@ section{
                 .footerInfo {
                     word-break: break-all;
                     margin-top: 0;
+                    gap: 0.5rem;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                    border-left: 2px white solid;
                     img {
-                        width: 45px;
+                        width: 30px;
                     }
 
                     p:first-child {
@@ -1252,6 +1251,7 @@ section{
     .containerQuienesSomos{
         div{
             gap: 2rem;
+            overflow-y: overlay;
             span, b, p{
                 width: 100%;
                 z-index: 1;
@@ -1289,11 +1289,17 @@ section{
         z-index: 0;
     }
 
+    .tituloFarmacia {
+        margin: 15vh 0 0vh 0;
+        text-align: center;
+    }
+
     .containerFarmacia{
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 15vh 6vw 6vh 6vw;
+        padding: 0vh 0vw 6vh 0vw;
+
 
         .listaMeds{
             width: 100%;
@@ -1314,6 +1320,14 @@ section{
             .containerDesc{
                 width: 65%;
                 height: auto;
+                text-align: center;
+                h2{
+                    font-size: 1.8rem;
+                }
+    
+                p {
+                    font-size: 1.3rem;
+                }
             }
 
             b{
@@ -1328,10 +1342,6 @@ section{
         .containerMed{
             width: 200px;
             height: 200px;
-
-            h2{
-                font-size: 1rem;
-            }
         }
     }
 
@@ -1344,6 +1354,14 @@ section{
         display: none;
     }
 
+    body {
+        
+    h2 {
+        font-size: 2rem; 
+    }
+    
+    }
+
     .containerQuienesSomos{
         div{
             span, b, p{
@@ -1353,4 +1371,81 @@ section{
             }
         }
     }
+    .containerIndex {
+        .logoBienvenida {
+            min-width: 150px;
+        }
+
+        section:nth-of-type(1) 
+        .containerBienvenida {
+            flex-direction: column;
+            padding: 0;
+            margin-top: 60vh;
+            div:nth-child(1) {
+                width: 100%;
+                letter-spacing: 0;
+                padding: 0vh 0 0 6vw;
+                h1 {
+                    font-size: 3rem;
+                }
+                div p {
+                    font-size: 1rem;
+                }
+                .goodBye {
+                    display: none;
+                }
+            }
+            
+            div:nth-child(2) {
+                width: 0;
+                height: 100%;
+                margin-top: 15%;
+                margin-bottom: 45%;
+                padding: 0vh 60vw 0px 0px;
+                display: flex;
+            }  
+        }
+        section:nth-of-type(2) {
+            margin-top: 25vh;
+        }
+    
+        section:nth-of-type(4) 
+            .containerLeyes 
+                .container3Leyes { 
+                    flex-direction: column;
+                    div {
+                        width: 70%;
+                    }
+    
+            }
+    
+        section:nth-of-type(6) {
+            .containerS6 div {
+                text-align: center;
+            }
+            
+            .container1S6 
+                .Tarjeta {
+                min-width: none;
+            }
+        }
+
+    
+        .lateralSlider, .centralSlider {
+            .slider__burbuja {
+                bottom: 25%;
+            }
+    
+            .slider__burbuja > img {
+                width: 35px;
+            }
+    
+            .sliderDescription {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+        
 }
