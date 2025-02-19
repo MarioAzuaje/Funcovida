@@ -787,6 +787,7 @@ section{
 .lateralSlider, .centralSlider {
     width: 70%;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
 
@@ -1432,6 +1433,10 @@ section{
                 .Tarjeta {
                 min-width: none;
             }
+        }
+
+        .centralSlider {
+            width: 80%;
         }
 
     
