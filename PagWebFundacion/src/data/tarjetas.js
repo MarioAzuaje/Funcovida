@@ -2,7 +2,7 @@ export const tarjetas = [
     {
         title: "Evento Navideño",
         date: "15/12/2024",
-        content: "lorem ip asddsadadasd",
+        content: "Jornada navideña de concientización acerca de la educación sexual y la transmisión del VIH.",
         src: 'tarjetas/tarjeta1.jfif'
         
     },
